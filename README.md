@@ -12,6 +12,25 @@ Interacting with Google's Gemini models through Vertex AI requires complex authe
 * **Model Flexibility:** Supports accessing various models, with a default setting of `gemini-pro` (v1.0). Users can switch to `gemini-1.5-pro-preview-0409` for the latest version.
 * **API Proxying:** Acts as a middleman for Vertex AI API requests, handling authentication and communication seamlessly.
 
+### Setting Up Vertex AI API JSON API Key Authentication
+
+#### 1. Create a Service Account:
+
+*   In the Google Cloud console, navigate to **IAM & Admin > Service Accounts**.
+*   Click **Create Service Account**.
+*   Provide a name and description for the service account.
+*   Click **Create and Continue**.
+*   Grant the service account the necessary roles for Vertex AI access, such as "Vertex AI User" or specific roles depending on your needs.
+*   Click **Done**.
+
+#### 2. Create a Service Account Key:
+
+*   On the Service Accounts page, find your newly created service account.
+*   Click on the three dots under **Actions** and select **Manage Keys**.
+*   Click **Add Key** and choose **Create new key**.
+*   Select **JSON** as the key type and click **Create**.
+*   **Download the JSON key file** to a secure location. **This is your API key equivalent**.
+
 ###  Configuration
 
 1. **Vertex AI Credentials:**: Place your Vertex AI JSON API key within the `config/vertex-ai.json` file.
