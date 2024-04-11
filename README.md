@@ -48,6 +48,8 @@ You can use the docker iamge to deploy the proxy server.
 docker pull shinchven/vertex-ai-proxy
 ```
 
+#### Docker Run
+
 ```bash
 docker run -d \
 -p 3030:3030 \
@@ -55,6 +57,8 @@ docker run -d \
 -v /path/to/default.json:/usr/src/app/config/default.json \
 shinchven/vertex-ai-proxy
 ```
+
+#### Docker Compose
 
 ```yml
 version: '3.7'
