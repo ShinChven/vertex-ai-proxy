@@ -35,9 +35,9 @@ To use Google Cloud Vertex AI, you need to set up a service account and obtain a
 
 ###  Configuration
 
-1. **Vertex AI Credentials:**: Place your Vertex AI JSON API key within the `config/vertex-ai.json` file.
-2. **User Secret:**: Define the user secret within the `users` array of the `config/default.json` file.
-3. **Project & Location:**: Specify your Google Cloud Project ID and location in the `vertex` field of `config/default.json`.
+1. **Vertex AI Credentials:** Place your Vertex AI JSON API key within the `config/vertex-ai.json` file.
+2. **User Secret:** Define the user secret within the `users` array of the `config/default.json` file.
+3. **Project & Location:** Specify your Google Cloud Project ID and location in the `vertex` field of `config/default.json`.
 
 ### Usage
 
