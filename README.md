@@ -42,7 +42,7 @@ To use Google Cloud Vertex AI, you need to set up a service account and obtain a
 
 ### Deployment
 
-You can use the docker iamge to deploy the proxy server.
+You can use the docker image to deploy the proxy server.
 
 ```bash
 docker pull shinchven/vertex-ai-proxy
