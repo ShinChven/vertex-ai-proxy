@@ -56,6 +56,20 @@ docker run -d \
 shinchven/vertex-ai-proxy
 ```
 
+```yml
+version: '3.7'
+
+services:
+  vertex-ai-proxy:
+    image: shinchven/vertex-ai-proxy
+    ports:
+      - "3030:3030"
+    volumes:
+      - ./config/vertex-ai.json:/usr/src/app/config/vertex-ai.json
+      - ./config/default.json:/usr/src/app/config/default.json
+```
+
+
 ### Usage
 
 1. Start the proxy server.
