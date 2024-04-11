@@ -14,6 +14,8 @@ Interacting with Google's Gemini models through Vertex AI requires complex authe
 
 ### Setting Up Vertex AI API JSON API Key Authentication
 
+To use Google Cloud Vertex AI, you need to set up a service account and obtain a JSON API key. Follow these steps to create a service account and obtain the necessary credentials:
+
 #### 1. Create a Service Account:
 
 *   In the Google Cloud console, navigate to **IAM & Admin > Service Accounts**.
