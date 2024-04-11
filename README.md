@@ -53,7 +53,7 @@ docker run -d \
 -p 3030:3030 \
 -v /path/to/vertex-ai.json:/usr/src/app/config/vertex-ai.json \
 -v /path/to/default.json:/usr/src/app/config/default.json \
-shinchven/vertex-ai-proxy:v0.0.1
+shinchven/vertex-ai-proxy
 ```
 
 ### Usage
