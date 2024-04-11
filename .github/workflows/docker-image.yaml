@@ -24,4 +24,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: shinchven/vertex-ai-proxy:${{ github.ref_name }}
+          tags: shinchven/vertex-ai-proxy:${{ github.ref_name }}, shinchven/vertex-ai-proxy:latest
+
+      
