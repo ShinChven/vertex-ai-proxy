@@ -30,6 +30,9 @@ jobs:
     name: Create Release
     needs: build-and-push 
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Create Release
         id: create_release
