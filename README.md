@@ -33,11 +33,28 @@ To use Google Cloud Vertex AI, you need to set up a service account and obtain a
 *   Select **JSON** as the key type and click **Create**.
 *   **Download the JSON key file** to a secure location. **This is your API key equivalent**.
 
-###  Configuration
+### Configuration
 
 1. **Vertex AI Credentials:** Place your Vertex AI JSON API key within the `config/vertex-ai.json` file.
 2. **User Secret:** Define the user secret within the `users` array of the `config/default.json` file.
 3. **Project & Location:** Specify your Google Cloud Project ID and location in the `vertex` field of `config/default.json`.
+
+
+### Deployment
+
+You can use the docker iamge to deploy the proxy server.
+
+```bash
+docker pull shinchven/vertex-ai-proxy
+```
+
+```bash
+docker run -d \
+-p 3030:3030 \
+-v /path/to/vertex-ai.json:/usr/src/app/config/vertex-ai.json \
+-v /path/to/default.json:/usr/src/app/config/default.json \
+shinchven/vertex-ai-proxy
+```
 
 ### Usage
 
